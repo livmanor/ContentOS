@@ -13,7 +13,8 @@ import {
 } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import { SafeSocialAccount } from "@/lib/social/types";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import {
   Card,
   CardContent,
