@@ -203,11 +203,12 @@ export default async function ConnectionsPage() {
               <p className="text-xs text-muted-foreground">
                 Connect your Facebook Pages and linked Instagram Business accounts with permanent page tokens.
               </p>
-              <Button asChild className="w-full" variant="outline">
-                <Link href="/api/oauth/meta/start">
-                  Connect Facebook + Instagram
-                </Link>
-              </Button>
+              <Link
+                href="/api/oauth/meta/start"
+                className={cn(buttonVariants({ variant: "outline" }), "w-full")}
+              >
+                Connect Facebook + Instagram
+              </Link>
             </CardContent>
           </Card>
 
@@ -230,11 +231,12 @@ export default async function ConnectionsPage() {
               <p className="text-xs text-muted-foreground">
                 Publish to your personal profile or administered company pages with automatic token refresh.
               </p>
-              <Button asChild className="w-full" variant="outline">
-                <Link href="/api/oauth/linkedin/start">
-                  Connect LinkedIn
-                </Link>
-              </Button>
+              <Link
+                href="/api/oauth/linkedin/start"
+                className={cn(buttonVariants({ variant: "outline" }), "w-full")}
+              >
+                Connect LinkedIn
+              </Link>
             </CardContent>
           </Card>
 
@@ -257,11 +259,12 @@ export default async function ConnectionsPage() {
               <p className="text-xs text-muted-foreground">
                 Connect your X account securely via PKCE with automatic refresh token rotation.
               </p>
-              <Button asChild className="w-full" variant="outline">
-                <Link href="/api/oauth/x/start">
-                  Connect X
-                </Link>
-              </Button>
+              <Link
+                href="/api/oauth/x/start"
+                className={cn(buttonVariants({ variant: "outline" }), "w-full")}
+              >
+                Connect X
+              </Link>
             </CardContent>
           </Card>
         </div>
